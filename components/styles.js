@@ -15,6 +15,10 @@ const styles = {
         paddingTop: 20
     },
 
+    navbarContainer: {
+        backgroundColor: '#2980b9'
+    },
+
     navbarButton: {
         justifyContent: 'center', 
         alignItems: 'center', 

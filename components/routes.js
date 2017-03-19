@@ -3,7 +3,8 @@ export const MAIN_SCENE = {
 };
 
 export const STATION_DETAILS = {
-    id: 'STATION_DETAILS'
+    id: 'STATION_DETAILS',
+    station: undefined
 };
 
 export const SETTINGS_SCENE = {

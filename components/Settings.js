@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import NavigationBar from 'react-native-navbar';
-import { Screen } from '@shoutem/ui';
+import { Screen, View, Text } from '@shoutem/ui';
 
 import styles from './styles';
 
@@ -16,11 +16,15 @@ export default class Settings extends Component {
         return (
             <Screen>
                 <NavigationBar
-                    style={{backgroundColor: '#2980b9'}}
+                    style={styles.navbarContainer}
                     statusBar={statusBarConfig}
                     title={titleConfig}
                     leftButton={leftButtonConfig(this.props.navigator)}
                 />
+
+                <View>
+                    <Text>Settings scene</Text>
+                </View>
             </Screen>
         );
     }

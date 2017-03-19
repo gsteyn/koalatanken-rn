@@ -9,6 +9,7 @@ import NavigationBar from 'react-native-navbar';
 import * as Routes from './routes';
 import Settings from './Settings';
 import StationsMap from './StationsMap';
+import StationDetails from './StationDetails';
 import styles from './styles';
 
 const API_DEBOUNCE_TIME = 2000;
@@ -118,14 +119,14 @@ class App extends Component {
                 <Screen>
                     <View style={{height: 50}}>
                         <NavigationBar
-                            style={{backgroundColor: '#2980b9'}}
+                            style={styles.navbarContainer}
                             statusBar={statusBarConfig}
                             title={titleConfig}
                             rightButton={rightButtonConfig(navigator)}
                         />
                     </View>
                     <View style={{flex: 1}}>
-                        <StationsMap {...this.state} onRegionChange={this.onRegionChange.bind(this)} />
+                        <StationsMap navigator={navigator} {...this.state} onRegionChange={this.onRegionChange.bind(this)} />
                     </View>
                 </Screen>
             );
@@ -133,6 +134,13 @@ class App extends Component {
             return (
                 <Settings 
                     navigator={navigator}
+                />
+            );
+        } else if (route.id === Routes.STATION_DETAILS.id) {
+            return (
+                <StationDetails
+                    navigator={navigator}
+                    station={route.station}
                 />
             );
         }
