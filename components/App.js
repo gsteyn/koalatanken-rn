@@ -113,7 +113,6 @@ class App extends Component {
     }
 
     renderScene(route, navigator) {
-        console.log('App > renderScene > route > ', route);
         if (route.id === Routes.MAIN_SCENE.id) {
             return (
                 <Screen>
