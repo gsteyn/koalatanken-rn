@@ -1,0 +1,23 @@
+ [{
+ 	"address": "Hindersteinlaan 20",
+ 	"stationGeoJson": {
+ 		"type": "Point",
+ 		"coordinates": [52.1059101, 5.0159031]
+ 	},
+ 	"stationHashKey": 517194,
+ 	"stationGeohash": 5.1719444E18,
+ 	"postalCode": " 3451 EZ Vleuten",
+ 	"name": "Esso Vleuten",
+ 	"fuelDetails": [{
+ 		"type": "DIESEL",
+ 		"deltaAverage": -6.6,
+ 		"price": 1.279,
+ 		"lastUpdated": [2017, 1, 7]
+ 	}, {
+ 		"type": "EURO95",
+ 		"deltaAverage": -10.5,
+ 		"price": 1.569,
+ 		"lastUpdated": [2017, 1, 7]
+ 	}],
+ 	"stationId": "3165"
+ }]
